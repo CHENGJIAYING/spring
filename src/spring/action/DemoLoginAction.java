@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import spring.model.LoginDao;
 import spring.model.LoginService;
 
-public class DeboLoginAction {
+public class DemoLoginAction {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.config.xml");
