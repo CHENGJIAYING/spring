@@ -11,8 +11,12 @@ public class DemoLogProviderAction {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.config.xml");
-		LogProvider logProvider = (LogProvider)context.getBean("logProvider");
-		logProvider.log("Have a good day !!");
+		
+		LogProvider logProvider1 = (LogProvider)context.getBean("logProvider");
+		LogProvider logProvider2 = (LogProvider)context.getBean("logProvider");
+		//logProvider.log("Have a good day !!");
+		System.out.println(logProvider1.hashCode());
+		System.out.println(logProvider2.hashCode());
 		((ConfigurableApplicationContext)context).close();
 
 	}
